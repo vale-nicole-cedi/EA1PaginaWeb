@@ -1,27 +1,45 @@
-#container {
-  text-align: center;
+// Estilos generales para el encabezado
+ion-header {
+  &.translucent {
+    background: rgba(255, 255, 255, 0.8); // Fondo translúcido
+    backdrop-filter: blur(10px); // Efecto de desenfoque
+  }
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  ion-toolbar {
+    --background: #edfe2f; // Azul principal
+    --color: rgb(0, 0, 0); // Texto blanco
+
+    ion-title {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center; // Centrado del texto
+    }
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+// Estilos para el contenido
+ion-content {
+  &.fullscreen {
+    background: #f4f4f4; // Fondo gris claro
+  }
+
+  ion-list {
+    margin: 0;
+    padding: 0;
+    background: white; // Fondo blanco para la lista
+
+    ion-item {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333; // Color de texto gris oscuro
+      border-bottom: 1px solid #e0e0e0; // Línea divisoria
+
+      &:hover {
+        background: #f0f0f0; // Fondo gris claro al pasar el mouse
+      }
+
+     
+    }
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
