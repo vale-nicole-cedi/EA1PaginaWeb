@@ -1,41 +1,39 @@
-// Estilos generales para el encabezado
 ion-header {
   &.translucent {
-    background: rgba(255, 255, 255, 0.8); // Fondo translúcido
-    backdrop-filter: blur(10px); // Efecto de desenfoque
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(10px); 
   }
 
   ion-toolbar {
-    --background: #edfe2f; // Azul principal
-    --color: rgb(0, 0, 0); // Texto blanco
+    --background: #edfe2f; 
+    --color: rgb(0, 0, 0); 
 
     ion-title {
       font-size: 20px;
       font-weight: bold;
-      text-align: center; // Centrado del texto
+      text-align: center; 
     }
   }
 }
 
-// Estilos para el contenido
 ion-content {
   &.fullscreen {
-    background: #f4f4f4; // Fondo gris claro
+    background: #f4f4f4; 
   }
 
   ion-list {
     margin: 0;
     padding: 0;
-    background: white; // Fondo blanco para la lista
+    background: white; 
 
     ion-item {
       font-size: 16px;
       font-weight: 500;
-      color: #333; // Color de texto gris oscuro
-      border-bottom: 1px solid #e0e0e0; // Línea divisoria
+      color: #333; 
+      border-bottom: 1px solid #e0e0e0; 
 
       &:hover {
-        background: #f0f0f0; // Fondo gris claro al pasar el mouse
+        background: #f0f0f0; 
       }
 
      
